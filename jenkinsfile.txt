@@ -1,14 +1,5 @@
-pipeline { 
-    agent any  
-    stages { 
-        stage('Build') { 
-            steps { 
-               echo 'This is a minimal pipeline.' 
-            }
-        }
-    }
-
-agent any
+pipeline {
+    agent any
     tools { 
         maven 'Maven' 
         jdk 'JAVA_HOME' 
@@ -29,7 +20,4 @@ agent any
             }
         }
     }
-
-
 }
-
